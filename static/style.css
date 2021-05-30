@@ -3,22 +3,33 @@
   src: url(/static/fonts/Rain\ Tungsten\ Medium.ttf);
 }
 
+@font-face {
+  font-family: arabiya;
+  src: url(/static/fonts/AirArabia\ Normal\ Regular.ttf);
+  /* unicode-range: U+0600–06FF, U+0750–077F, U+08A0–08FF, U+FB50–FDFF, U+FE70–FEFF, U+10E60–10E7F, U+1EC70–1ECBF, U+1ED00–1ED4F, U+1EE00–1EEFF; */
+  unicode-range: U+0600-06FF;
+}
+
 html {
   background-color: #000;
   color: #eee;
-  font-family: -apple-system, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
+  font-family: arabiya, -apple-system, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 h1 {
-  font-family: tungsten;
+  font-family: arabiya, tungsten;
 }
 
 .main-title {
-  font-family: tungsten;
+  font-family: arabiya, tungsten;
   font-size: 48px;
   text-align: center;
   letter-spacing: 4px;
+}
+
+.main-title[lang=ar] {
+  letter-spacing: normal;
+  font-weight: normal;
 }
 
 canvas {
@@ -77,7 +88,7 @@ canvas {
 }
 
 p {
-    font-family: -apple-system, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: arabiya, -apple-system, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 button {
@@ -87,11 +98,15 @@ button {
   border-radius: 5px;
   border: solid 1px #fff;
   font-size: 40px;
-  font-family: tungsten;
+  font-family: arabiya, tungsten;
   letter-spacing: 4px;
   transition: background 2s, color 1s, zoom 2s;
   cursor:pointer;
+}
 
+button[lang=ar]{
+  font-family: arabiya, tungsten;
+  letter-spacing: normal;
 }
 
 button:hover {
@@ -101,8 +116,7 @@ button:hover {
   border-radius: 5px;
   border: solid 1px #fff;
   font-size: 40px;
-  font-family: tungsten;
-  letter-spacing: 4px;
+  font-family: arabiya, tungsten;
 }
 
 .section {
