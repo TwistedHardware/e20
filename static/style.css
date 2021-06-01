@@ -20,6 +20,11 @@ h1 {
   font-family: arabiya, tungsten;
 }
 
+a {
+  color:#fff;
+  text-decoration: none;
+}
+
 .main-title {
   font-family: arabiya, tungsten;
   font-size: 48px;
@@ -87,8 +92,12 @@ canvas {
 .menu li ul li {
   opacity: 0;
   transform: rotateX(116deg);
-  padding: 10px 0px;
+  padding-right: 19px;
   /* margin-left: 10px; */
+}
+
+.menu > li > ul > li > a {
+  padding: 10px 0px;
 }
 
 .menu li:hover ul li {
