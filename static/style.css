@@ -33,6 +33,20 @@ a {
   letter-spacing: 4px;
 }
 
+.main-title span {
+  background: linear-gradient(#ffffff, rgb(110, 110, 110) 38.24%, rgb(255, 255, 255) 43.28%, rgb(137, 137, 137) 47.06%, #ffffff);
+  color: #fff; 
+  display: inline;
+  padding: 0.45rem;
+  
+  /* Needs prefixing */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.3px #eee;
+}
+
 .main-title[lang=ar] {
   letter-spacing: normal;
   font-weight: normal;
