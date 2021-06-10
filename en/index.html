@@ -1,109 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>E20</title>
 
-        <link rel="stylesheet" href="/static/style.css">
-        <!-- <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css"> -->
-        <link rel="icon" href="/static/img/favicon.ico">
-        <link href="/static/fontawesome/css/all.min.css" rel="stylesheet">
+<head>
+    <title>E20</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <canvas id=c></canvas>
-        <div class="container page">
-            <div class="row" style="position: fixed; top: 0px; background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.8) 100%); width:100%; height:82px">
-                <div class="col">
-                    <img src="/static/img/logo.png" style="padding-left: 4px;">
-                    <span style="    position: fixed; top: 62px; left: 5px; font-size: 10px;">EVENTS | MEDIA | ACCESS</span>
-                    <ul class="menu" style="right: 121px;">
-                        <li>
-                          <a href="#"><i class="fas fa-globe" style="padding-right: 5px;"></i>English</a>
-                          
-                          <ul style="text-align: center; right:107px">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="/static/img/favicon.ico">
+    <link href="/static/fontawesome/css/all.min.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <canvas id=c></canvas>
+    <div class="container page">
+        <div class="row"
+            style="position: fixed; top: 0px; background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.8) 100%); width:100%; height:82px">
+            <div class="col">
+                <img src="/static/img/logo.png" style="padding-left: 4px;">
+                <span style="    position: fixed; top: 62px; left: 5px; font-size: 10px;">EVENTS | MEDIA | ACCESS</span>
+                <ul class="menu" style="right: 121px;">
+                    <li>
+                        <a href="#"><i class="fas fa-globe" style="padding-right: 5px;"></i>English</a>
+
+                        <ul style="text-align: center; right:107px">
                             <li><a href="/ar/">عربي</a></li>
-                            <!-- <li><a href="/es/">Española</a></li>
-                            <li><a href="/fr/">Français</a></li>
-                            <li><a href="/zh/">中文</a></li>
-                            <li><a href="/ru/">русский</a></li> -->
-                          </ul>
-                        </li>
-                      </ul>
-                      <ul class="menu">
-                        <li>
-                          <a href="#"><i class="fas fa-home" style="padding-right: 5px;"></i>Home</a>
-                          
-                          <ul style="text-align: left;">
-                            <li><a href="/en/events/"><i class="fas fa-calendar-alt" style="padding-right: 5px;"></i>Events</a></li>
-                            <li><a href="/en/media/"><i class="fas fa-tv" style="padding-right: 5px;"></i>Media</a></li>
-                            <li><a href="/en/access/"><i class="fas fa-flag" style="padding-right: 5px;"></i>Access</a></li>
-                            <li><a href="/en/contact/"><i class="fas fa-envelope" style="padding-right: 5px;"></i>Contact</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 156px;">
-                <div class="col">
-                    <h1 class="main-title">LEADERS IN MEDIA AND GLOBAL COMMUNICATION</h1>
-                    <h2>
-                        Where all think alike, no one thinks very much.
-                    </h2>
-                    <h3>
-                        Our specialized team of event management and media experts deliver outstanding event experience.
-                        From physical to virtual, we provide solutions and compliance with the highest level of transparent security standards.
-                        Media coverage, PR and public speaking specialists and advisers.
-                    </h3>
-                    <div class="section">
-                        <div style="display: inline-block; width:110px; vertical-align: top; text-align: center;">
-                            <i class="fas fa-calendar-alt section-icon"></i>
-                        </div>
-                        <div style="display: inline-block; width:calc(100% - 136px); vertical-align: top; padding-left: 18px;">
-                            <div style="font-size: 25px; font-weight: bold;">WORLD CLASS EVENTS</div>
-                            <div>
-                                For the largest events with global impact, our specialized team of event management and media experts deliver outstanding experience.
-                            </div>
-                            <br><a href="/en/events/">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="section">
-                        <div style="display: inline-block; width:110px; vertical-align: top; text-align: center;">
-                            <i class="fas fa-tv section-icon"></i>
-                        </div>
-                        <div style="display: inline-block; width:calc(100% - 136px); vertical-align: top; padding-left: 18px;">
-                            <div style="font-size: 25px; font-weight: bold;">MEDIA & PR</div>
-                            <div>
-                                We design your media strategy and implement editorials, TV interviews and social media influence campaigns.
-                            </div>
-                            <br><a href="/en/media/">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="section">
-                        <div style="display: inline-block; width:110px; vertical-align: top; text-align: center;">
-                            <i class="fas fa-flag section-icon"></i>
-                        </div>
-                        <div style="display: inline-block; width:calc(100% - 136px); vertical-align: top; padding-left: 18px;">
-                            <div style="font-size: 25px; font-weight: bold;">ACCESS</div>
-                            <div>
-                                We help facilitate public policy partnership to open new markets and shape national, regional and international policies.
-                            </div>
-                            <br><a href="/en/access/">Learn More</a>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu">
+                    <li>
+                        <a href="#"><i class="fas fa-home" style="padding-right: 5px;"></i>Home</a>
 
+                        <ul style="text-align: left;">
+                            <li><a href="/en/events/"><i class="fas fa-calendar-alt"
+                                        style="padding-right: 5px;"></i>Events</a></li>
+                            <li><a href="/en/media/"><i class="fas fa-tv" style="padding-right: 5px;"></i>Media</a></li>
+                            <li><a href="/en/access/"><i class="fas fa-flag" style="padding-right: 5px;"></i>Access</a>
+                            </li>
+                            <li><a href="/en/contact/"><i class="fas fa-envelope"
+                                        style="padding-right: 5px;"></i>Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 156px;">
+            <div class="col">
+                <h1 class="main-title">LEADERS IN MEDIA AND GLOBAL COMMUNICATION</h1>
+                <h2>
+                    Where all think alike, no one thinks very much.
+                </h2>
+                <h3>
+                    Our specialized team of event management and media experts deliver outstanding event experience.
+                    From physical to virtual, we provide solutions and compliance with the highest level of transparent
+                    security standards.
+                    Media coverage, PR and public speaking specialists and advisers.
+                </h3>
+                <div class="section">
+                    <div class="section-left">
+                        <a href="/en/events/"><img src="/static/img/g20.jpg" width="100%"></a>
+                    </div>
+                    <div class="section-right">
+                        <div style="font-size: 25px; font-weight: bold;">WORLD CLASS EVENTS</div>
+                        <div>
+                            For the largest events with global impact, our specialized team of event management and
+                            media experts deliver outstanding experience.
                         </div>
+                        <br><a href="/en/events/">Learn More</a>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-left">
+                        <a href="/en/media/"><img src="/static/img/media-training.webp" width="100%"></a>
+                    </div>
+                    <div class="section-right">
+                        <div style="font-size: 25px; font-weight: bold;">MEDIA & PR</div>
+                        <div>
+                            We design your media strategy and implement editorials, TV interviews and social media
+                            influence campaigns.
+                        </div>
+                        <br><a href="/en/media/">Learn More</a>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-left">
+                        <a href="/en/access/"><img src="/static/img/government-relations.jpg" width="100%"></a>
+                    </div>
+                    <div class="section-right">
+                        <div style="font-size: 25px; font-weight: bold;">ACCESS</div>
+                        <div>
+                            We help facilitate public policy partnership to open new markets and shape national,
+                            regional and international policies.
+                        </div>
+                        <br><a href="/en/access/">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div style="text-align: center; padding-top:40px">
-                <button><a href="/en/contact/" style="color:#fff; text-decoration: none;">Let's Talk</a></button>
-            </div>
-            <footer style="text-align: center; padding: 50px 10px 10px 10px;">
-                © Copyright Events 20 | <i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-youtube"></i> <i class="fab fa-instagram"></i>
-            </footer>
         </div>
-        <script src="/static/js/tweenjs.min.js"></script>
-        <script src="/static/js/createjs.min.js"></script>
-        <script src="/static/animation.js"></script>
-    </body>
+        <div style="text-align: center; padding-top:40px">
+            <button><a href="/en/contact/" style="color:#fff; text-decoration: none;">Let's Talk</a></button>
+        </div>
+        <footer>
+            <span class="social-media">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+            </span>
+            <br><br>
+            © Copyright Events 20
+        </footer>
+    </div>
+    <script src="/static/js/tweenjs.min.js"></script>
+    <script src="/static/js/createjs.min.js"></script>
+    <script src="/static/animation.js"></script>
+</body>
+
 </html>
